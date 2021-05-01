@@ -15,7 +15,7 @@ app.get("/about",(req,res)=>{
 res.send('welcome to my about page');
 });
 
-app.get("/resume.pdf",(req,res)=>{
+app.get("/resume",(req,res)=>{
     res.send('<a href = "file:///C:/Users/Vaibhav/OneDrive/Desktop/tcs%20applicatin/tcs/Resume.pdf"  type="_blank">  r </a>')
 });
 
