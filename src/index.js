@@ -17,7 +17,6 @@ app.use(session({ secret: 'sess_secret', cookie: { maxAge: 60000 }}));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended:true}));
 
-const PORT =  5002;
 
 let users = [{
     id:1, name: "Manish", email: 'manish@yopmail.com', password: "123456"
@@ -113,6 +112,6 @@ app.get('/profile',isLoggedIn,(req,res)=> {
     });
 });
 
-app.listen(process.env.PORT || PORT,()=>{
+app.listen(process.env.PORT || 3000,()=>{
     console.log(`http://localhost:${PORT}`)
 });
