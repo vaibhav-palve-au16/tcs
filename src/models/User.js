@@ -7,4 +7,4 @@ const User = (data) => {
     }
 }
 
-export default User;
+// export default User;

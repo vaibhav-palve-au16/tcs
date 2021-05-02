@@ -1,10 +1,10 @@
-import path from 'path';
-import express from 'express';
-import bodyParser from 'body-parser';
+const path = require('path');
+const express = require('express')
+const bodyParser =require('body-parser');
 const session = require('express-session');
 const cookieParser = require('cookie-parser');
 
-import User from './models/User';
+const User = require('./models/User');
 
 const app = express();
 
