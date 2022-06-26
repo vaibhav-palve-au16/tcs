@@ -1,44 +1,24 @@
 {
-  "name": "es6-js",
+  "name": "26sunday",
   "version": "1.0.0",
-  "description": "Node Js ia a javascript runtime",
-  "main": "./src/index.js",
+  "description": "",
+  "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "babel-watch ./src/index.js",
-    "clean": "rimraf dist && mkdir dist",
-    "babel-build": "babel -d ./dist ./src -s",
-    "build": "npm run clean && npm run babel-build",
-    "cb": "babel-watch ./src/callbacks.js",
-    "pms": "babel-watch ./src/promises.js"
+    "start": "nodemon index.js"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://manishmahant-attainu@github.com/manishmahant-attainu/cv-raman-back-end.git"
-  },
-  "author": "Manish",
+  "keywords": [],
+  "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/manishmahant-attainu/cv-raman-back-end/issues"
-  },
-  "homepage": "https://github.com/manishmahant-attainu/cv-raman-back-end#readme",
   "dependencies": {
-    "@babel/cli": "^7.12.10",
-    "@babel/core": "^7.12.10",
-    "@babel/node": "^7.12.10",
-    "@babel/plugin-proposal-class-properties": "^7.12.1",
-    "@babel/plugin-syntax-jsx": "^7.12.1",
-    "@babel/preset-env": "^7.12.11",
-    "babel-polyfill": "^6.26.0",
-    "babel-watch": "^7.0.0",
-    "body-parser": "^1.19.0",
-    "cookie-parser": "^1.4.5",
-    "express": "^4.17.1",
-    "express-session": "^1.17.1",
-    "hbs": "^4.1.1",
-    "isomorphic-fetch": "^3.0.0",
-    "multer": "^1.4.2",
-    "nodemon": "^2.0.7",
-    "rimraf": "^3.0.2"
+    "bcrypt": "^5.0.1",
+    "body-parser": "^1.20.0",
+    "dotenv": "^16.0.1",
+    "express": "^4.18.1",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^6.4.0",
+    "multer": "^1.4.4",
+    "multer-gridfs-storage": "^5.0.2",
+    "nodemon": "^2.0.18",
+    "yup": "^0.32.11"
   }
 }
