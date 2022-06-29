@@ -1,18 +1,21 @@
 version: '3.1'
 
 services:
-  mongo_db:
+  app:
     image: mongo:latest
-    container_name: db_service
+    container_name: docker-mongo-demo1
     restart: always
-    volumes:
-      - mongo_db:/data/db
+    build: .
+    ports:
+      - '5500:5500'
+    external_links:
+      - mongo_db
 
     environment:
       port: 5432
       USERNAME: root
       PASSWORD: root
-      MONGODB_URL: mongodb://db_service:27017/
+      MONGODB_URL: mongodb+srv://admin:admin@cluster0.jppso.mongodb.net/?retryWrites=true&w=majority
       DB_NAME: my_db
       NAME: vaibhav
 volumes:
