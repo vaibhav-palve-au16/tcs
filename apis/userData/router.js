@@ -7,7 +7,7 @@ module.exports =
   router
     .get('/users', getUserDetails)
     .get('/userinformation', getUserInformation)
-    .post('/userdata', upload.single('avatar'), createUserDetails)
+    .post('/userdata', createUserDetails)
     .patch('/userdata', updateUserAllData)
     .delete('/userdata', deleteUserData);
 

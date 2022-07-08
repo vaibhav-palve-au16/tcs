@@ -14,7 +14,6 @@ app.use(bodyParser.json())
 app.use('/uploads', express.static('uploads'))
 
 app.get('/',(req, res)=>{
-  console.log(req.url)
   res.send({message:'🍔🍔🍔 we have it '})
 })
 
@@ -27,7 +26,6 @@ const start = async ()=>{
   try {
     await connectionDB(process.env.MONGO_URL)
     app.listen(port , (req, res)=>{
-    console.log(`http://localhost:${port}`);
 })
   } catch (error) {
     console.log(error.message);
@@ -35,4 +33,4 @@ const start = async ()=>{
 }
 start()
 
-
+module.exports = app;
