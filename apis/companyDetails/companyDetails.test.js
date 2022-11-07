@@ -6,6 +6,9 @@ describe('GET /api/v1/company',()=>{
         const respose = await request(app)
         .get('/api/v1/company')
         .expect(200)
+        .end(function(err, res) {
+            if (err) throw err;
+          })
     expect(respose.body.message)
     })
 })
@@ -15,6 +18,9 @@ describe('POST /api/v1/company',()=>{
         const respose = await request(app)
         .post('/api/v1/company')
         .expect(200)
+        .end(function(err, res) {
+            if (err) throw err;
+          })
     expect(respose.body.message)
     })
 })
@@ -24,6 +30,9 @@ describe('PATCH /api/v1/company',()=>{
         const respose = await request(app)
         .patch('/api/v1/company')
         .expect(200)
+        .end(function(err, res) {
+            if (err) throw err;
+          })
     expect(respose.body.message)
     })
 })
@@ -34,6 +43,9 @@ describe('DELETE /api/v1/signup',()=>{
         const respose = await request(app)
         .delete('/api/v1/company')
         .expect(200)
+        .end(function(err, res) {
+            if (err) throw err;
+          })
     expect(respose.body.message)
     })
 })

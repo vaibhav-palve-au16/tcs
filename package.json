@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "nodemon index.js",
-    "test": "DEBUG=MYWORK jest"
+    "test": " jest"
   },
   "keywords": [],
   "author": "",
