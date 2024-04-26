@@ -23,7 +23,7 @@
     "multer-gridfs-storage": "^5.0.2",
     "nodemailer": "^6.7.5",
     "nodemon": "^2.0.18",
-    "supertest": "^6.2.4",
+    "supertest": "^7.0.0",
     "yup": "^0.32.11"
   },
   "devDependencies": {
